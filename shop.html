@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Tienda | GrowShop</title>
+  <meta name="description" content="Tienda GrowShop: sustratos, fertilizantes, iluminación y más."/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main class="pt-5">
+    <section class="container py-6">
+      <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-4 mb-4">
+        <div>
+          <h1 class="section-title mb-2">Tienda</h1>
+          <p class="text-secondary mb-0 small">Selecciona tus productos y finaliza por WhatsApp o pasarela (demo).</p>
+        </div>
+        <div class="d-flex flex-wrap gap-3">
+          <div class="search-wrapper">
+            <input id="searchInput" type="search" class="form-control form-control-sm bg-dark-alt border-0 text-white" placeholder="Buscar...">
+          </div>
+          <select id="categoryFilter" class="form-select form-select-sm bg-dark-alt text-white border-0">
+            <option value="all">Todas las categorías</option>
+          </select>
+          <select id="sortSelect" class="form-select form-select-sm bg-dark-alt text-white border-0">
+            <option value="default">Orden</option>
+            <option value="priceAsc">Precio ↑</option>
+            <option value="priceDesc">Precio ↓</option>
+            <option value="nameAsc">Nombre A-Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="productsGrid" class="row g-4"></div>
+    </section>
+
+    <!-- Carrito lateral -->
+    <div class="offcanvas offcanvas-end cart-panel text-white" tabindex="-1" id="cartCanvas">
+      <div class="offcanvas-header border-bottom border-opacity-10">
+        <h5 class="offcanvas-title">Carrito</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column p-0">
+        <div id="cartItems" class="cart-items flex-grow-1"></div>
+        <div class="p-3 border-top border-opacity-10">
+          <div class="d-flex justify-content-between small mb-1">
+            <span>Subtotal</span><span id="cartSubtotal">$0</span>
+          </div>
+          <div class="d-flex justify-content-between small mb-1">
+            <span>IVA (19%)</span><span id="cartTax">$0</span>
+          </div>
+          <div class="d-flex justify-content-between fw-semibold mb-3">
+            <span>Total</span><span id="cartTotal">$0</span>
+          </div>
+          <div class="d-grid gap-2">
+            <button id="whatsappBtn" class="btn btn-gradient btn-sm">Enviar por WhatsApp</button>
+            <button id="checkoutBtn" class="btn btn-outline-light btn-sm">Pasarela (Demo)</button>
+            <button id="clearCartBtn" class="btn btn-outline-danger btn-sm">Vaciar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón flotante carrito -->
+    <button class="cart-fab btn btn-gradient shadow" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas">
+      <span class="position-relative">
+        <i class="bi bi-bag"></i>
+        <span id="cartCountBadge" class="badge bg-danger position-absolute top-0 start-100 translate-middle p-1 d-none"></span>
+      </span>
+    </button>
+  </main>
+
+  <!-- Modal Pasarela Demo -->
+  <div class="modal fade" id="paymentModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark-alt text-white border border-opacity-25">
+        <div class="modal-header">
+          <h5 class="modal-title">Pasarela (Demo)</h5>
+          <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body small">
+          <p>Este es un ejemplo. Aquí integrarías MercadoPago, Stripe, etc.</p>
+          <ul id="paymentSummary" class="list-unstyled mb-3"></ul>
+          <div class="d-flex justify-content-between fw-semibold">
+            <span>Total:</span><span id="paymentTotal"></span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Cerrar</button>
+          <button class="btn btn-gradient btn-sm">Pagar (Simulado)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer py-5 mt-5">
+    <div class="container small text-secondary">
+      <div class="d-flex flex-column flex-sm-row justify-content-between">
+        <span>&copy; 2025 GrowShop</span>
+        <span>Tienda construida con Bootstrap 5</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script>
+    fetch("components/navbar.html").then(r=>r.text()).then(h=>{
+      document.getElementById("navbar-placeholder").innerHTML = h;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "m1",
+    "nombre": "Maceta de Cerámica",
+    "desc": "Maceta de cerámica de alta calidad, ideal para plantas de interior.",
+    "precio": 15.99,
+    "img": "https://images.unsplash.com/photo-1585325701961-74f2d809bbae?auto=format&fit=crop&w=600&q=80",
+    "categoria": "macetas"
+  },
+  {
+    "id": "t1",
+    "nombre": "Tierra Orgánica",
+    "desc": "Mezcla de tierra orgánica para un crecimiento óptimo de tus plantas.",
+    "precio": 9.99,
+    "img": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80",
+    "categoria": "sustratos"
+  },
+  {
+    "id": "f0",
+    "nombre": "Fertilizante Natural",
+    "desc": "Fertilizante natural para un crecimiento saludable y sostenible.",
+    "precio": 12.50,
+    "img": "https://images.unsplash.com/photo-1614594853811-8e3c6329a2b2?auto=format&fit=crop&w=600&q=80",
+    "categoria": "fertilizantes"
+  },
+  {
+    "id": "se1",
+    "nombre": "Semillas de Tomate",
+    "desc": "Semillas de tomate orgánico, perfectas para cultivar en casa.",
+    "precio": 3.50,
+    "img": "https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=600&q=80",
+    "categoria": "semillas"
+  },
+  {
+    "id": "r1",
+    "nombre": "Sistema de Riego",
+    "desc": "Sistema de riego automático para mantener tus plantas hidratadas.",
+    "precio": 45.00,
+    "img": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=80",
+    "categoria": "accesorios"
+  },
+  {
+    "id": "s1",
+    "nombre": "Sustrato Premium 25L",
+    "categoria": "sustratos",
+    "precio": 18.90,
+    "img": "https://images.unsplash.com/photo-1587049352841-4d58a6a5b37e?auto=format&fit=crop&w=600&q=80",
+    "desc": "Mezcla aireada con micorrizas para raíces vigorosas."
+  },
+  {
+    "id": "s2",
+    "nombre": "Sustrato Light Mix 50L",
+    "categoria": "sustratos",
+    "precio": 31.50,
+    "img": "https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=600&q=80",
+    "desc": "Textura ligera ideal para control de nutrición."
+  },
+  {
+    "id": "f1",
+    "nombre": "Fertilizante Crecimiento 1L",
+    "categoria": "fertilizantes",
+    "precio": 14.25,
+    "img": "https://images.unsplash.com/photo-1598032895398-55f58bbf8d01?auto=format&fit=crop&w=600&q=80",
+    "desc": "Nutrientes esenciales para fase vegetativa."
+  },
+  {
+    "id": "f2",
+    "nombre": "Fertilizante Floración 1L",
+    "categoria": "fertilizantes",
+    "precio": 16.40,
+    "img": "https://images.unsplash.com/photo-1600346012334-46b07d0015b4?auto=format&fit=crop&w=600&q=80",
+    "desc": "Mejora desarrollo de cogollos y aromas."
+  },
+  {
+    "id": "l1",
+    "nombre": "Panel LED Full Spectrum 300W",
+    "categoria": "iluminacion",
+    "precio": 129.99,
+    "img": "https://images.unsplash.com/photo-1602664691821-89501d1f0f50?auto=format&fit=crop&w=600&q=80",
+    "desc": "Espectro optimizado bajo consumo."
+  },
+  {
+    "id": "l2",
+    "nombre": "Barra LED Suplementaria",
+    "categoria": "iluminacion",
+    "precio": 54.90,
+    "img": "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?auto=format&fit=crop&w=600&q=80",
+    "desc": "Refuerzo espectral para laterales."
+  },
+  {
+    "id": "a1",
+    "nombre": "Maceta Geotextil 11L",
+    "categoria": "accesorios",
+    "precio": 4.20,
+    "img": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80",
+    "desc": "Mejora aireación radicular."
+  },
+  {
+    "id": "a2",
+    "nombre": "Timer Digital Programable",
+    "categoria": "accesorios",
+    "precio": 22.00,
+    "img": "https://images.unsplash.com/photo-1582719478141-c89cae4dc85b?auto=format&fit=crop&w=600&q=80",
+    "desc": "Control preciso de ciclos de luz."
+  }
+]

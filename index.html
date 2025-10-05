@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GrowShop - Cultiva con Estilo</title>
+  <meta name="description" content="GrowShop: Insumos, sustratos, fertilizantes y accesorios para tus cultivos." />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"><!-- Agregado -->
+</head>
+<body>
+  <!-- Navbar dinámica -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- Hero -->
+  <header class="hero position-relative d-flex align-items-center justify-content-center overflow-hidden">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="assets/video/plants.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="container position-relative text-center hero-content">
+      <h1 class="display-4 fw-bold mb-3 fade-in-delay">Cultiva. Optimiza. Disfruta.</h1>
+      <p class="lead mb-4 fade-in-delay2">Todo lo que necesitas para un crecimiento potente y saludable.</p>
+      <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+        <a href="shop.html" class="btn btn-gradient btn-lg px-4 shadow">Entrar a la Tienda</a>
+        <a href="#destacados" class="btn btn-outline-light btn-lg px-4 scroll-link">Ver Destacados</a>
+      </div>
+    </div>
+    <div class="scroll-indicator text-white small">Scroll</div>
+  </header>
+
+  <!-- Beneficios -->
+  <section class="py-5 bg-dark-alt">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3">
+          <div class="mini-feature reveal">
+            <i class="bi bi-leaf icon-gradient"></i>
+            <p>Orgánico</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="mini-feature reveal">
+            <i class="bi bi-lightning-charge icon-gradient"></i>
+            <p>Potencia</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="mini-feature reveal">
+              <i class="bi bi-truck icon-gradient"></i>
+              <p>Envíos</p>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="mini-feature reveal">
+            <i class="bi bi-chat-dots icon-gradient"></i>
+            <p>Soporte</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destacados -->
+  <section id="destacados" class="py-6 container">
+    <div class="text-center mb-5">
+      <h2 class="section-title reveal">Líneas Destacadas</h2>
+      <p class="text-secondary mb-0 reveal">Curadas para maximizar tu rendimiento</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <article class="feature-card glass reveal">
+          <img src="assets/img/feature1.jpg" alt="Sustratos Premium" class="rounded-3 mb-3 w-100 object-cover ratio-16x9" />
+          <h5 class="fw-semibold mb-2">Sustratos Premium</h5>
+          <p class="small text-secondary">Retención óptima, aireación equilibrada y mezcla ideal para raíces vigorosas.</p>
+          <a href="shop.html#sustratos" class="stretched-link link-gradient fw-semibold">Ver más</a>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="feature-card glass reveal">
+          <img src="assets/img/feature2.jpg" alt="Fertilizantes Balanceados" class="rounded-3 mb-3 w-100 object-cover ratio-16x9" />
+          <h5 class="fw-semibold mb-2">Fertilizantes Balanceados</h5>
+          <p class="small text-secondary">Macronutrientes y microelementos para todas las fases de cultivo.</p>
+          <a href="shop.html#fertilizantes" class="stretched-link link-gradient fw-semibold">Explorar</a>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="feature-card glass reveal">
+          <img src="assets/img/feature3.jpg" alt="Iluminación LED" class="rounded-3 mb-3 w-100 object-cover ratio-16x9" />
+          <h5 class="fw-semibold mb-2">Iluminación LED</h5>
+          <p class="small text-secondary">Espectros diseñados para crecimiento y floración con bajo consumo.</p>
+          <a href="shop.html#iluminacion" class="stretched-link link-gradient fw-semibold">Consultar</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-6 position-relative gradient-band text-white">
+    <div class="container text-center">
+      <h2 class="mb-3 fw-bold reveal">Optimiza tu cultivo hoy</h2>
+      <p class="lead mb-4 reveal">Arma tu carrito y recibe asesoría directa por WhatsApp.</p>
+      <a href="shop.html" class="btn btn-light btn-lg px-5 fw-semibold shadow reveal">Ir a la Tienda</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="fw-semibold mb-3">GrowShop</h5>
+          <p class="small text-secondary">Herramientas y nutrientes para resultados consistentes.</p>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-semibold mb-2">Navegación</h6>
+          <ul class="list-unstyled small">
+            <li><a href="index.html" class="footer-link">Inicio</a></li>
+            <li><a href="shop.html" class="footer-link">Tienda</a></li>
+            <li><a href="contact.html" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-semibold mb-2">Contacto</h6>
+          <p class="small mb-1">WhatsApp: +34 600 000 000</p>
+          <p class="small mb-0">Email: soporte@growshop.test</p>
+        </div>
+      </div>
+      <div class="border-top mt-4 pt-3 d-flex flex-column flex-sm-row justify-content-between small text-secondary">
+        <span>&copy; 2025 GrowShop</span>
+        <span>Desarrollado con HTML5 + Bootstrap 5 + JS</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Offcanvas Carrito (agregado) -->
+  <div class="offcanvas offcanvas-end cart-panel text-white" tabindex="-1" id="cartCanvas">
+    <div class="offcanvas-header border-bottom border-opacity-10">
+      <h5 class="offcanvas-title">Carrito</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column p-0">
+      <div id="cartItems" class="cart-items flex-grow-1"></div>
+      <div class="p-3 border-top border-opacity-10">
+        <div class="d-flex justify-content-between small mb-1">
+          <span>Subtotal</span><span id="cartSubtotal">$0</span>
+        </div>
+        <div class="d-flex justify-content-between small mb-1">
+          <span>IVA (19%)</span><span id="cartTax">$0</span>
+        </div>
+        <div class="d-flex justify-content-between fw-semibold mb-3">
+          <span>Total</span><span id="cartTotal">$0</span>
+        </div>
+        <div class="d-grid gap-2">
+          <button id="whatsappBtn" class="btn btn-gradient btn-sm">Enviar por WhatsApp</button>
+          <button id="checkoutBtn" class="btn btn-outline-light btn-sm">Pasarela (Demo)</button>
+          <button id="clearCartBtn" class="btn btn-outline-danger btn-sm">Vaciar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón flotante carrito -->
+  <button class="cart-fab btn btn-gradient shadow" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas">
+    <span class="position-relative">
+      <i class="bi bi-bag"></i>
+      <span id="cartCountBadge" class="badge bg-danger position-absolute top-0 start-100 translate-middle p-1 d-none"></span>
+    </span>
+  </button>
+
+  <!-- Modal Pasarela Demo -->
+  <div class="modal fade" id="paymentModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark-alt text-white border border-opacity-25">
+        <div class="modal-header">
+          <h5 class="modal-title">Pasarela (Demo)</h5>
+          <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body small">
+          <p>Resumen actual del carrito:</p>
+          <ul id="paymentSummary" class="list-unstyled mb-3"></ul>
+          <div class="d-flex justify-content-between fw-semibold">
+            <span>Total:</span><span id="paymentTotal"></span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Cerrar</button>
+          <button class="btn btn-gradient btn-sm">Pagar (Simulado)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/cart.js"></script><!-- Agregado -->
+  <script>
+    // Carga del navbar
+    fetch("components/navbar.html").then(r=>r.text()).then(html=>{
+      document.getElementById("navbar-placeholder").innerHTML = html;
+    });
+  </script>
+</body>
+</html>
