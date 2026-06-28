@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto | GrowShop</title>
+    <meta name="description" content="Ponte en contacto con el equipo de GrowShop para asesoría y soporte especializado." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero compacto -->
+    <header class="py-6 position-relative text-center overflow-hidden">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="assets/video/plants.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container position-relative">
+            <h1 class="display-5 fw-bold mb-3 section-title">Hablemos</h1>
+            <p class="lead text-secondary mb-0">Asesoría técnica, disponibilidad de productos y soporte post‑venta.</p>
+        </div>
+    </header>
+
+    <main class="container py-6">
+        <div class="row g-5 align-items-start">
+            <!-- Formulario -->
+            <div class="col-lg-7">
+                <div class="feature-card glass h-100">
+                    <h2 class="h4 fw-semibold mb-3">Envíanos un mensaje</h2>
+                    <p class="small text-secondary mb-4">Tiempo promedio de respuesta: <span class="text-white">&lt; 12h hábiles</span>.</p>
+                    <form id="contactForm" novalidate class="needs-validation contact-form">
+                        <div id="errorMessage" class="alert alert-danger py-2 small d-none"></div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label fw-medium">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Tu nombre" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-medium">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required />
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label fw-medium">Mensaje</label>
+                            <textarea id="message" rows="5" class="form-control" placeholder="Cuéntanos cómo podemos ayudarte" required></textarea>
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row gap-3">
+                            <button type="submit" class="btn btn-gradient px-4 fw-semibold">Enviar</button>
+                            <button type="button" id="whatsapp-button" class="btn btn-outline-light px-4"><i class="bi bi-whatsapp me-1"></i>WhatsApp</button>
+                        </div>
+                        <p class="form-text text-secondary mt-3 small">Protegemos tus datos. Solo los usamos para responder tu solicitud.</p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Información de contacto -->
+            <div class="col-lg-5">
+                <div class="d-flex flex-column gap-4">
+                    <div class="mini-feature">
+                        <h3 class="h6 fw-semibold mb-2"><i class="bi bi-envelope-paper me-2 icon-gradient"></i>Correo</h3>
+                        <p class="small mb-1 text-secondary">Consultas generales</p>
+                        <a href="mailto:kevin.albo@gmail.com" class="link-gradient small fw-semibold">kevin.albo@gmail.com</a>
+                    </div>
+                    <div class="mini-feature">
+                        <h3 class="h6 fw-semibold mb-2"><i class="bi bi-clock-history me-2 icon-gradient"></i>Horario</h3>
+                        <ul class="list-unstyled small mb-0 text-secondary">
+                            <li>Lun - Vie: 09:00 - 18:00</li>
+                            <li>Sáb: 10:00 - 14:00</li>
+                            <li class="text-white">Domingos y festivos: soporte diferido</li>
+                        </ul>
+                    </div>
+                    <div class="mini-feature">
+                        <h3 class="h6 fw-semibold mb-2"><i class="bi bi-geo-alt me-2 icon-gradient"></i>Ubicación</h3>
+                        <p class="small mb-2 text-secondary">Centro logístico / Despachos</p>
+                        <p class="small mb-0">Av. Principal 123, Ciudad Verde</p>
+                    </div>
+                    <div class="mini-feature">
+                        <h3 class="h6 fw-semibold mb-2"><i class="bi bi-shield-check me-2 icon-gradient"></i>Compromiso</h3>
+                        <p class="small mb-0 text-secondary">Respuestas claras, soporte post‑venta y recomendaciones personalizadas para cada etapa de tu cultivo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- CTA inferior -->
+    <section class="py-6 gradient-band text-white text-center">
+        <div class="container">
+            <h2 class="h3 fw-bold mb-3">¿Necesitas una guía rápida?</h2>
+            <p class="lead mb-4">Cuéntanos tu setup y te orientamos en menos de 5 minutos.</p>
+            <a href="#contactForm" class="btn btn-light btn-lg px-5 fw-semibold">Ir al Formulario</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h5 class="fw-semibold mb-3">GrowShop</h5>
+            <p class="small text-secondary">Herramientas y nutrientes para resultados consistentes.</p>
+          </div>
+          <div class="col-md-4">
+            <h6 class="fw-semibold mb-2">Navegación</h6>
+            <ul class="list-unstyled small">
+              <li><a href="index.html" class="footer-link">Inicio</a></li>
+              <li><a href="shop.html" class="footer-link">Tienda</a></li>
+              <li><a href="contact.html" class="footer-link">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="fw-semibold mb-2">Contacto</h6>
+            <p class="small mb-1">WhatsApp: +56971307840</p>
+            <p class="small mb-0">Email: kevin.albo@gmail.com</p>
+          </div>
+        </div>
+        <div class="border-top mt-4 pt-3 d-flex flex-column flex-sm-row justify-content-between small text-secondary">
+          <span>© 2025 GrowShop</span>
+          <span>Desarrollado con HTML5 + Bootstrap 5 + JS</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Offcanvas Carrito (igual que en index/shop) -->
+    <div class="offcanvas offcanvas-end cart-panel text-white" tabindex="-1" id="cartCanvas">
+      <div class="offcanvas-header border-bottom border-opacity-10">
+        <h5 class="offcanvas-title">Carrito</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column p-0">
+        <div id="cartItems" class="cart-items flex-grow-1"></div>
+        <div class="p-3 border-top border-opacity-10">
+          <div class="d-flex justify-content-between small mb-1">
+            <span>Subtotal</span><span id="cartSubtotal">$0</span>
+          </div>
+            <div class="d-flex justify-content-between small mb-1">
+              <span>IVA (19%)</span><span id="cartTax">$0</span>
+            </div>
+            <div class="d-flex justify-content-between fw-semibold mb-3">
+              <span>Total</span><span id="cartTotal">$0</span>
+            </div>
+            <div class="d-grid gap-2">
+              <button id="whatsappBtn" class="btn btn-gradient btn-sm">Enviar por WhatsApp</button>
+              <button id="checkoutBtn" class="btn btn-outline-light btn-sm">Pasarela</button>
+              <button id="clearCartBtn" class="btn btn-outline-danger btn-sm">Vaciar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón flotante carrito -->
+    <button class="cart-fab btn btn-gradient shadow" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas">
+      <span class="position-relative">
+        <i class="bi bi-bag"></i>
+        <span id="cartCountBadge" class="badge bg-danger position-absolute top-0 start-100 translate-middle p-1 d-none"></span>
+      </span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  <script src="assets/js/cart.js"></script>
+    <script type="module" src="assets/js/auth.js"></script>
+    <script type="module" src="assets/js/contact.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/whatsapp.js"></script>
+    <script>
+      // Carga dinámica del navbar con selección de link activo
+      fetch('components/navbar.html').then(r=>r.text()).then(nav=>{
+        const holder = document.getElementById('navbar-placeholder');
+        holder.innerHTML = nav;
+        // Marcar enlace activo
+        const path = location.pathname.split('/').pop() || 'index.html';
+        const map = { 'index.html':'index', 'shop.html':'shop', 'contact.html':'contact' };
+        const key = map[path] || 'index';
+        holder.querySelectorAll('.nav-link').forEach(a=>{
+          if(a.dataset.nav === key){
+            a.classList.add('active', 'text-white');
+            a.classList.remove('text-white-50');
+            a.setAttribute('aria-current','page');
+          } else {
+            a.classList.remove('active', 'text-white');
+            a.classList.add('text-white-50');
+          }
+        });
+        // Listener scroll para estado scrolled
+        const navEl = holder.querySelector('.gs-navbar');
+        const toggleScrolled = ()=>{
+          if(window.scrollY>10) navEl.classList.add('scrolled'); else navEl.classList.remove('scrolled');
+        };
+        toggleScrolled();
+        window.addEventListener('scroll',toggleScrolled);
+      });
+    </script>
+</body>
+</html>
